@@ -229,5 +229,11 @@ if __name__ == '__main__':
         channel.basic_publish(exchange='', routing_key='predict-24', body=json.dumps(predict_price))
         
         # sleep
-        time.sleep(3600)
+        latest_ts = timestamp_benchmark[ticker_num+sequence_length-1]
+        print ('latest timestamp is', latest_ts)
+        ts_now = time.time()
+        print ('current timestamp is', ts_now)
+        wait_second = 3600 - (ts_now - latest_ts)
+        print ('wait second is', wait_second)
+        time.sleep(wait_second + 120)
 
