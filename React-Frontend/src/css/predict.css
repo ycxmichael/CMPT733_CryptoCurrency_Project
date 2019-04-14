@@ -1,0 +1,51 @@
+.relative1 {
+    position: relative;
+  }
+
+
+.relative2 {
+    position: relative;
+    top: 10px;
+    left: 0px;
+    background-color: rgba(250, 250, 250, 0);
+    width: 1112px;
+    height: 850px;
+}
+
+.relative3 {
+    position: relative;
+    top: -370px;
+    left: 580px;
+    background-color: rgb(83, 232, 243);
+    width: 400px;
+    height: 450px;
+}
+
+.relative4 {
+    position: relative;
+    top: -50px;
+    left: 90px;
+    background-color: rgb(172, 233, 146);
+    width: 400px;
+    height: 450px;
+}
+
+.relative5 {
+    position: relative;
+    top: -500px;
+    left: 580px;
+    background-color: rgb(144, 146, 209);
+    width: 400px;
+    height: 450px;
+}
+
+
+.relative6 {
+    position: relative;
+    top: -380px;
+    left: 85px;
+    background-color: rgb(242, 175, 112);
+    width: 400px;
+    height: 450px;
+}
+

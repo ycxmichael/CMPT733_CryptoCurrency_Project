@@ -1,0 +1,12 @@
+.relativeinfo {
+    position: relative;
+}
+
+.relativeinfo2 {
+position: relative;
+top: 30px;
+left: 0px;
+background-color: rgb(247, 249, 249, 0);
+width: 1112px;
+height: 500px;
+}
