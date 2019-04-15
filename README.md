@@ -48,3 +48,7 @@ Programs for stock price prediction
 * **StockPricePrediction_v5_last_value.ipynb**:
 	* Predict stock price in next day using last value method ie. use price on day t-1 to predict price on day t
 	* Works well. On the test set, the RMSE is 1.127 and MAPE is 0.565% using last value prediction
+	
+* **Coin_EDA.ipynb**:
+	* Various Exploratory Data Analysis on cryptocurrency price, volume and sentiment data.
+	
