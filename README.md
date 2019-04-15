@@ -47,7 +47,7 @@ this is our pre-fetched data for all news content from 2017-01-01 to present
 
 please download this file if you want to retrain the model and go through the model_test.ipynb
 
-**3.Run realtime_pipeline.py to get realtime prediction results
+**3.Run realtime_pipeline.py to get realtime prediction results**
 
 in terminal, run `python realtime_pipeline.py`
 
