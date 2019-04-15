@@ -53,4 +53,7 @@ in terminal, run `python realtime_pipeline.py`
 
 **4.Web Application**
 
-__to do: please mention how the TA can get to our website__
+cd React-Frontend/src 
+then in terminal, run **node server.js** to start the backend server
+To start the react frontend, cd React-Frontend, run **npm start**
+
