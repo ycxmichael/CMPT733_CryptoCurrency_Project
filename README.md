@@ -1,4 +1,4 @@
-# CryptoMania - Real-time Cryptocurrency Price Prediction and Analysis Platform
+# Real-time Cryptocurrency Price Prediction and Analysis Platform
 
 Final Project for CMPT733 - Programming for Big Data II
 
