@@ -205,7 +205,7 @@ Highcharts.theme = {
 // Apply the theme
 Highcharts.setOptions(Highcharts.theme);
 
-var eventSource = new EventSource("http://localhost:5000/get_second");
+var eventSource = new EventSource("http://54.193.19.36/get_second");
 // var eventSource;
 var exc;
 var pre_lst = [], time = (new Date()).getTime(), i;
@@ -241,7 +241,7 @@ function set_lst(){
 // }
 //
 // function draw_predit(series){
-//   axios.get('http://localhost:5000/get_store')
+//   axios.get('http://54.193.19.36/get_store')
 //            .then(res => {
 //
 //              for (let i = 0; i < res.data.length; i += 1){
@@ -340,9 +340,9 @@ class Realtime2 extends Component {
 
                         // draw_actual(this.series[0])
                         // draw_predit(this.series[1])
-
-                        eventSource.onmessage = e =>
-                          updateChart(e, this);
+                        eventSource.onmessage = e =>{
+                          updateChart(e, this)
+                        };
                     }
                 }
             },
@@ -363,7 +363,7 @@ class Realtime2 extends Component {
                 selected: 0
             },
             title : {
-                text : 'Live crypto coin price'
+                text : 'Live crypto coin price (simulated)'
             },
             tooltip: {
                 split: false

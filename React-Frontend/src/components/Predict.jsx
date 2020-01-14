@@ -17,16 +17,15 @@ import { Badge } from 'react-bootstrap';
 
 
 
-class Predict extends Component {
+class Predict extends Component {`
     state = {  }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div className='relative1'>
                 <div className='relative2'>
-                    <h2><Badge variant='secondary'>Real time bitcoin price </Badge></h2>
+                    <h2><Badge variant='secondary'>Real time bitcoin price (simulated) </Badge></h2>
                     {/* <MyStockChart/> */}
-                    {/* <Realtime/> */}
-                    <Realtime/>
+                    `<Realtime/>
                     <Realtime2/>
                 </div>
                 {/* <div className='relative3'>
@@ -49,5 +48,5 @@ class Predict extends Component {
          );
     }
 }
- 
+
 export default Predict;

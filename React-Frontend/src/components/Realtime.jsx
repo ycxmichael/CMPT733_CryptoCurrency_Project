@@ -3,7 +3,7 @@ import Highcharts from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official'
 import axios from 'axios';
 
-var eventSource = new EventSource("http://localhost:5000/events");
+// var eventSource = new EventSource("http://54.193.19.36/events");
 // var eventSource;
 var exc;
 var pre_lst = [], time = (new Date()).getTime(), i;
@@ -55,7 +55,7 @@ function draw_actual(series){
 }
 
 function draw_predit(series){
-  axios.get('http://localhost:5000/get_store')
+  axios.get('http://54.193.19.36/get_store')
            .then(res => {
              // console.log(pre_lst)
              for (let i = 0; i < res.data.length; i += 1){
@@ -152,9 +152,9 @@ class Realtime extends Component {
                         draw_predit(this.series[1])
                         // console.log(pre_lst)
 
-                        // eventSource = new EventSource("http://localhost:5000/events");
-                        eventSource.onmessage = e =>
-                          updateChart(e, this);
+                        // eventSource = new EventSource("http://54.193.19.36/events");
+                        // eventSource.onmessage = e =>
+                        //   updateChart(e, this);
 
                         //use axios to fetch data from CryptoCompare
                         // axios.get('https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=GBP&limit=2000')
