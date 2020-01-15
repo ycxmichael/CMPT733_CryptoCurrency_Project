@@ -363,7 +363,7 @@ class Realtime2 extends Component {
                 selected: 0
             },
             title : {
-                text : 'Live crypto coin price (simulated)'
+                text : 'Second-Level Prediction (simulated)'
             },
             tooltip: {
                 split: false

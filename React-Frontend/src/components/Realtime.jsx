@@ -3,7 +3,7 @@ import Highcharts from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official'
 import axios from 'axios';
 
-// var eventSource = new EventSource("http://54.193.19.36/events");
+var eventSource = new EventSource("http://54.193.19.36/events");
 // var eventSource;
 var exc;
 var pre_lst = [], time = (new Date()).getTime(), i;
@@ -153,8 +153,8 @@ class Realtime extends Component {
                         // console.log(pre_lst)
 
                         // eventSource = new EventSource("http://54.193.19.36/events");
-                        // eventSource.onmessage = e =>
-                        //   updateChart(e, this);
+                        eventSource.onmessage = e =>
+                          updateChart(e, this);
 
                         //use axios to fetch data from CryptoCompare
                         // axios.get('https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=GBP&limit=2000')
@@ -216,7 +216,7 @@ class Realtime extends Component {
                 selected: 0
             },
             title : {
-                text : 'Live crypto coin price'
+                text : 'Hour-Level Prediction'
             },
             tooltip: {
                 split: false
