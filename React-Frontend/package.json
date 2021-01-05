@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "amqplib": "^0.5.5",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "highcharts": "^8.0.0",
